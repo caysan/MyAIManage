@@ -1,0 +1,12 @@
+# Antigravity AI Çalışma Kuralları
+
+Bu proje birden fazla kişi tarafından geliştirilmektedir. Bu nedenle AI asistan (Antigravity) aşağıdaki kurallara kesinlikle uymak zorundadır:
+
+1. **Onaysız Değişiklik Yok:** Kullanıcının açık onayı veya talebi olmadan hiçbir dosyada kod değişikliği yapma. Sadece sorulan sorulara cevap ver veya plan sun.
+2. **Kapsamı Dar Tut:** Yalnızca işlem yapılması istenen spesifik fonksiyon/satır veya dosyalarda değişiklik yap. 
+3. **Otomatik Formatlama Yasak:** İşlem yapılmayan, kullanıcının talep etmediği diğer alanlarda (aynı dosya içinde olsa bile) syntax düzeltmesi, kod formatlama, girinti (indentation) ayarlama gibi işlemler YAPMA.
+4. **Git Diff Optimizasyonu:** Takım arkadaşlarının kodlarıyla çakışma (merge conflict) yaratmamak için sadece ve sadece en gerekli satırları değiştir.
+5. **Gereksiz Dosya Oluşturma:** Kullanıcı aksini belirtmedikçe gereksiz yere scratch, test veya geçici dosyalar oluşturma.
+6. **Görmüşken Düzelteyim Yok:** Kodları gördüğünde daha iyisi veya daha performanslısı var, yazım formatı daha iyi olur diyerek gelmişken burayı da değiştireyim şeklinde yapma, olduğu gibi bırak.
+7. **Değiştirme Sınır:** Bir satır/kod bloğunda içerik veya değer değiştireceksen sadece değiştirilmesi gereken değerleri yaz, fonksiyonel olarak düzenleme yapma. 
+8. **Gereksiz Analizden Kaçın:** `node_modules`, `bin`, `obj`, `dist`, `dll` gibi derleme çıktılarını ve kütüphane klasörlerini analiz kapsamına alma. Bu dosyalar `.antigravityignore` dosyasında tanımlanmıştır.
