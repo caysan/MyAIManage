@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🌐 Debug Frontend (Chrome)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}/frontend",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:/*": "${webRoot}/*",
+                "/./*": "${webRoot}/*",
+                "/src/*": "${webRoot}/*"
+            }
+        }
+    ]
+}
