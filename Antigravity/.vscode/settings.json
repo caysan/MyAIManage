@@ -1,4 +1,3 @@
 {
-    "angular.enable-strict-mode-prompt": false,
-    "dotnet.defaultSolution": "backend/asp.Net.Core.sln"
+    "angular.enable-strict-mode-prompt": false
 }

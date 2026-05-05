@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "🟢 Start Frontend",
+      "label": "🚀 Start Frontend",
       "type": "shell",
       "command": "npx ng serve",
       "options": {
@@ -15,9 +15,7 @@
       },
       "problemMatcher": {
         "owner": "angular",
-        "pattern": {
-          "regexp": "^$"
-        },
+        "pattern": { "regexp": "^$" },
         "background": {
           "activeOnStart": true,
           "beginsPattern": "Building\\.\\.\\.",
@@ -29,85 +27,7 @@
       "label": "🛑 Frontend'i Durdur",
       "type": "shell",
       "command": "powershell -NoProfile -Command \"Stop-Process -Name node -Force -ErrorAction SilentlyContinue; exit 0\"",
-      "presentation": {
-        "reveal": "silent",
-        "panel": "shared"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "▶ Application.API",
-      "type": "shell",
-      "command": "dotnet run --project Services/ApplicationService/Application.API/Application.API.csproj",
-      "options": {
-        "cwd": "${workspaceFolder}/backend"
-      },
-      "isBackground": true,
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "group": "backend"
-      },
-      "problemMatcher": "$msCompile"
-    },
-    {
-      "label": "▶ Gateway.API",
-      "type": "shell",
-      "command": "dotnet run --project Services/Gateway/Gateway.API/Gateway.API.csproj",
-      "options": {
-        "cwd": "${workspaceFolder}/backend"
-      },
-      "isBackground": true,
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "group": "backend"
-      },
-      "problemMatcher": "$msCompile"
-    },
-    {
-      "label": "▶ Identity.API",
-      "type": "shell",
-      "command": "dotnet run --project Services/IdentityService/Identity.API/Identity.API.csproj",
-      "options": {
-        "cwd": "${workspaceFolder}/backend"
-      },
-      "isBackground": true,
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "group": "backend"
-      },
-      "problemMatcher": "$msCompile"
-    },
-    {
-      "label": "▶ Comment.API",
-      "type": "shell",
-      "command": "dotnet run --project Services/CommentService/Comment.API/Comment.API.csproj",
-      "options": {
-        "cwd": "${workspaceFolder}/backend"
-      },
-      "isBackground": true,
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "group": "backend"
-      },
-      "problemMatcher": "$msCompile"
-    },
-    {
-      "label": "🚀 Start .NET Backend",
-      "dependsOn": [
-        "▶ Application.API",
-        "▶ Gateway.API",
-        "▶ Identity.API",
-        "▶ Comment.API"
-      ],
-      "dependsOrder": "parallel",
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
-      },
+      "presentation": { "reveal": "silent", "panel": "shared" },
       "problemMatcher": []
     }
   ]
